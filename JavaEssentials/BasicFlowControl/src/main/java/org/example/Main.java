@@ -86,7 +86,45 @@ public class Main {
             case "b" -> System.out.println("var4 is b");
             default -> System.out.println("var4 is other than a and b");
         }
-
         System.out.println("Hello world!");
+//Loops in Java
+//        for(;;)
+//        {
+//            System.out.println("This is an infinite loop");
+//        }
+// for loop
+        for(int i = 0; i<=10 ;i++)
+        {
+            System.out.println(i);
+        }
+
+// while loop
+        int j = 0;
+        while(j<=10) {
+            System.out.println(j);
+            j++;
+        }
+
+// do while loop
+       int k =0;
+        do{
+            System.out.println(k);
+            k++;
+        }while(k<=10);
+// break can't be used outside of switch and loops.
+
+//so the bottom line is whenever we are executing continue statement, all the statement after continue will not get executed, but the statements before continue will execute.
+         for(int i =0; i<10 ;i++) {
+             System.out.println("Before continue");
+             if (i == 5) {
+                 continue;
+             }
+             System.out.println(i);
+         }
+// for each loop
+    int []arr = {1,2,3,4};
+         for( int temp :arr){
+             System.out.println(temp);
+         }
     }
 }
