@@ -3,9 +3,9 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
 
-// In switch cases there is no condition checking ,that's why we have to add break.
-// Sequence of switch statements can be changed ,and you can skip the break for the last one(whether it's a default statement or case stmt)
-// In order to avoid confusions ,it is always better to use break with each and every stmt of switch.
+// In switch cases there is no condition checking, so we must add a break.
+// Sequence of switch statements can be changed, and you can skip the break for the last one(whether it's a default statement or case stmt)
+//To avoid confusion, it is always better to use a break with every stmt of switch.
 // Incompatible types. Found: 'float', required: 'char, byte, short, int, Character, Byte, Short, Integer, String, or an enum'
 
 
@@ -39,6 +39,54 @@ public class Main {
                 System.out.println("y is 3");
 
         }
+        // is switch case-sensitive
+
+        char var = 'B';
+        switch(var){
+            case 'a':
+                System.out.println("var is a ");
+                break;
+            case 'b':
+                System.out.println("var is b");
+                break;
+            default:
+                System.out.println("var is other than a and b");
+
+        }
+// to make upper and lower  both cases work ,we have to convert each and every variable in lower case.
+        char var2 = 'B';
+        switch(Character.toLowerCase(var2)){
+            case 'a':
+                System.out.println("var2 is a ");
+                break;
+            case 'b':
+                System.out.println("var2 is b");
+                break;
+            default:
+                System.out.println("var2 is other than a and b");
+
+        }
+// Switch with String variable
+        String var3 = "A";
+          switch(var3.toLowerCase()){
+              case "a":
+                  System.out.println("var3 is a");
+                  break;
+              case "b":
+                  System.out.println("var3 is b");
+                  break;
+              default:
+                  System.out.println("var3 is other than a and b");
+                  break;
+          }
+// Enhanced  switch statement
+        String var4 = "A";
+        switch (var4.toLowerCase()) {
+            case "a" -> System.out.println("var4 is a");
+            case "b" -> System.out.println("var4 is b");
+            default -> System.out.println("var4 is other than a and b");
+        }
+
         System.out.println("Hello world!");
     }
 }
