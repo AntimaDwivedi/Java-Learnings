@@ -5,7 +5,7 @@ public class Main {
         //Java Methods
         loop(1, 10);
         System.out.println("Hello world!");
-        loop(20, 40);
+        loop(21, 30);
 
         areaOfRectangle(5, 9);
         //It's on  you whether you are assigning return statement value yo a variable.Program will not show any error,just value would be ignored.
