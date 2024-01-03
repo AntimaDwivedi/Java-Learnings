@@ -2,6 +2,8 @@ package org.example;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Stack;
 
 class Intwrapper{
 
@@ -63,12 +65,58 @@ public class Main {
 
         System.out.println(listNumbers2.get(0).getNum()); // unboxing
 
-
         // Autoboxing and unboxing behind the scenes
         ArrayList<Double> listNumbers3 = new ArrayList<>();
         listNumbers3.add(Double.valueOf(25)); // Java actually uses this method for autoboxing.
         System.out.println(listNumbers3);
         System.out.println(listNumbers3.get(0).doubleValue()); // // Java actually uses this method for unboxing
+
+        // Stack Concepts
+        Stack<Integer> numbers = new Stack<>();
+        numbers.add(23);
+        numbers.add(2);
+        numbers.add(203);
+        numbers.add(25);
+        numbers.add(28);
+
+        System.out.println(numbers.isEmpty());
+
+        System.out.println(numbers.pop());//We don't pass any value inside pop bracket as deletion happens only from top.
+
+        System.out.println(numbers);
+
+        System.out.println(numbers.search(2));//It will return index of the element.index starting from 1 and from the last.
+        int x = numbers.indexOf(2);
+        System.out.println(x);//Index starting from 0 and from top as Stacklist is inheriting the indexOf() method of parent class that is vector.
+        // Check doc for better understandings.
+
+
+        // LinkedList
+        LinkedList<String> names = new LinkedList<>();
+        names.add("Geeta");
+        names.add("Reeta");
+        names.add("Seeta");
+        names.add("Meeta");
+        names.add("Jetha");
+        System.out.println(names);
+        names.add(2,"Daya");//Index starting from 0 and from top.
+        System.out.println(names);
+        names.set(3,"Tappu");//Updating the value of index 3.
+        System.out.println(names);
+        names.remove();//Will remove the first indexed element.
+        System.out.println(names);
+        names.remove(3);
+        System.out.println(names);
+
+
+
+
+
+
+
+
+
+
 
 
 
