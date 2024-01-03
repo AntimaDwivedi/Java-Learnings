@@ -75,3 +75,4 @@ public class Main {
 // Array is a collection of same type of entities.
 // One major issue with an array is that the size of the array is fixed.
 // Once an array is declared,its size can neither be increased nor decreased.
+//Solution of the problem is Arraylist
