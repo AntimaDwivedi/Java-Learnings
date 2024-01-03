@@ -8,3 +8,4 @@
 ###### Decrease size
 
 ###### ArrayList is a collection of similar type of entities ,with an advantage of Dynamic memory Allocation.
+###### Primitive data types are not allowed in ArrayList.We have to use wrapper class such as Integer.We can make our own wrapper class too.
