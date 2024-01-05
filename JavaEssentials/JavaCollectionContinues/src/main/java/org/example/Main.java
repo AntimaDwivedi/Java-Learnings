@@ -127,7 +127,7 @@ public class Main {
         //Map in java  -->Order of the elements is not fixed.Key should be unique in order to print all the values.
         Map<String , String > map = new HashMap<>();
         map.put("a3" ,"kali");
-        map.put("a0" ,"kamal");
+        map.put("a0" ,"kamali");
         map.put("a1" ,"komal");
         map.put("a5" , "Kori ");
         map.put("a2" ,"kashi");
@@ -136,13 +136,22 @@ public class Main {
         System.out.println(map);
 
 
-        //TreeMap in Java
+        //Iterations over hashmap
+        for(String key : map.keySet()){
+            System.out.println("Key: "+key + " Value: " +map.get(key));
+        }
+        System.out.println("***********************");
 
+        for(Map.Entry<String,String> entry: map.entrySet()){
+            System.out.println("Key: " +entry.getKey() + " Value: " +entry.getValue());
+        }
 
-
-
-
-
+        System.out.println("***********************");
+        Iterator<Map.Entry<String ,String>> entryIterator =  map.entrySet().iterator();
+           while(entryIterator.hasNext()){
+               Map.Entry<String,String > temp =entryIterator.next();
+               System.out.println("Key: " +temp.getKey() + " Value: " +temp.getValue());
+        }
 
 
     }
