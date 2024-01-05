@@ -145,7 +145,7 @@ public class Main {
 
         new Main().displayCharacter(dhoom3);
         //Sorting in list
-        dhoom3.sort(null);
+        dhoom3.sort(null);// sorts on the basis of natural ordering.
         System.out.println(dhoom3);//First it will sort the uppercase letter and then lower case letters.
 
         //Reversing in List
