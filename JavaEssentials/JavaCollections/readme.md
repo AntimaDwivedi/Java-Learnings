@@ -26,5 +26,8 @@
 ##### It extends class Vector.
 ##### Vector is similar to ArrayList , Difference being Vector methods are synchronized, whereas ArrayList methods are not.
 
-
+##### CompareTo Method(compares on the basis of natural ordering)
+###### If Part1 and part2 are same ,result is zero.
+###### If part1 is greater than part2 ,result is +ve.
+###### If part2 is greater than part1 ,result is -ve.
 

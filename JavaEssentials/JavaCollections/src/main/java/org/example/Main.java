@@ -1,9 +1,7 @@
 package org.example;
 
 import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Stack;
+import java.util.*;
 
 class Intwrapper{
 
@@ -108,22 +106,84 @@ public class Main {
         names.remove(3);
         System.out.println(names);
 
+        //List Interface in Java
+
+        LinkedList<String> list1 = new LinkedList<>();
+        list1.add("Gopi");
+        list1.add("Kokila");
+        list1.add("Aham");
+
+        ArrayList<String> list2 = new ArrayList<>();
+        list2.add("Jigar");
+        list2.add("Rashi");
+        list2.add("Hetal");
+        new Main().displayList(list2);
+        //If you try to execute below line ,you will get below error.
+        //java: incompatible types: java.util.LinkedList<java.lang.String> cannot be converted to java.util.ArrayList<java.lang.String>
+        //new Main().displayList(list1);
+        //To solve the below error ,use List.
+
+        new Main().printList(list1);
+        new Main().printList(list2);
 
 
+        for (String temp: list1
+             ) {
+            System.out.println(temp);
+        }
+
+        for (String temp: list2
+        ) {
+            System.out.println(temp);
+        }
+        // Iterator .sort and reverse method of List interface
+        List<String> dhoom3 = new ArrayList<>();
+        dhoom3.add("Amir");
+        dhoom3.add("Katrina");
+        dhoom3.add("Abhishek");
+        dhoom3.add("anil");
+
+        new Main().displayCharacter(dhoom3);
+        //Sorting in list
+        dhoom3.sort(null);
+        System.out.println(dhoom3);//First it will sort the uppercase letter and then lower case letters.
+
+        //Reversing in List
+        Collections.reverse(dhoom3);
+        System.out.println(dhoom3);
 
 
+        //compareTo method in Java
+        List<String> countries = new LinkedList<>();
+        countries.add("america");
+        int result = countries.get(0).compareTo("america");
+        System.out.println(result); // 0
 
-
-
-
-
-
-
-
-
+    }
+    void displayList(ArrayList<String> list)
+    {
+        for (String temp: list
+        ) {
+            System.out.println(temp);
+        }
+    }
+    void printList(List<String> list)
+    {
+        for (String temp: list
+        ) {
+            System.out.println(temp);
+        }
+    }
+    void displayCharacter(List<String> list){
+        Iterator<String> data = list.listIterator();
+        while(data.hasNext()){
+            System.out.println(data.next());
+        }
 
 
     }
+
+
 
 
 }
