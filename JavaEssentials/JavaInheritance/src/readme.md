@@ -10,7 +10,7 @@ By using getter and setter method
 ###### Single level Inheritance
 ###### Multiple Inheritance is not allowed in java.
 ###### Multilevel Inheritance
-###### Hierarchical Inheritance
+###### Hierarchical Inheritance  --> Single parent will have multiple children.
 ###### Hybrid inheritance is not allowed in java
 
 
