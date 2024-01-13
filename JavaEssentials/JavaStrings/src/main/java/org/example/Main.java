@@ -30,5 +30,22 @@ public class Main {
         System.out.println(c);
         System.out.println((c.replace("study" ,"play")));
 
+        // str1 and str2 both objects are pointing to same memory location.(==) methods compares  memory location while
+        // .equals() compares the objects.
+        //String Literals
+        String str1 = "Hello World !";
+        String str2 = "Hello World !";
+        System.out.println(str1==str2);
+        System.out.println(str1.equals(str2));
+
+        // str3 and str4 both are pointing to different objects stored in different memory locations.
+        // String objects
+        String str3 =  new String("Hello World");
+        String str4 =  new String("Hello World");
+
+        System.out.println(str3==str4);
+        System.out.println(str3.equals(str4));
+
+        //It's a good practice to use  methods  defined  under String class.
     }
 }
